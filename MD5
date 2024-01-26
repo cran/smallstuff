@@ -1,4 +1,4 @@
-fee6c0cc23562e08ad7ba711deca61b5 *DESCRIPTION
+bf38761ea67000c55b7b46c397d0baf5 *DESCRIPTION
 4621a6a74050e66075c34a04ce04c2ca *NAMESPACE
 03479812aefd6754648f3cbe3557ceaa *R/CI.R
 1bafda9e4c6653d39c3610411b6f81d3 *R/CVerror.R
@@ -52,7 +52,7 @@ b2fb8b81f0ad1dd753d9c2e10a38a5d5 *man/pop.var.Rd
 36862124ea0a648add52c3c472f52188 *man/qqlineHalf.Rd
 736db59264020d28cb1870868cfa916b *man/rcpp_hello_world.Rd
 ef8b9d660286b1dfeeeda194145cb66f *man/round2.Rd
-2fac67dfafe660f0261c347155735aa2 *man/smallstuff-package.Rd
+02945b8cdc95e34b1e4933354d1a883e *man/smallstuff-package.Rd
 f0acd254287286a53900109772d1e028 *man/span3D.Rd
 ef540493bebfaa3e9ffcb947ea7d6bcf *man/systemEq.Rd
 7a6f62e58ae2e44d7705251f1aa03f6e *man/vector2D.Rd

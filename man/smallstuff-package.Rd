@@ -3,32 +3,23 @@
 \alias{smallstuff}
 \docType{package}
 \title{
-  A short title line describing what the package does
+  Dr. Small's Data Science Functions
 }
 \description{
-  A more detailed description of what the package does. A length
-  of about one to five lines is recommended.
+  Functions used by students in the Master's of Data Science program at Drew
+  University. 
 }
 \details{
-  This section should provide a more detailed overview of how to use the
-  package, including the most important functions.
+  Some functions are used for Statistics using R, such as pop.var (calculates
+  the population variance), and outliers (finds the outliers in a distribution
+  with their indices), some for Applied Regression Analysis such as projMatrix
+  (Calculates the projection matrix) and systemEq (solves a system of linear 
+  equations), some for Machine Learning such as lmSub (finds the best linear
+  model in subset selection), and some for Networks such as get_subgraphs, which
+  splits a graph into subgraphs.
 }
 \author{
-Your Name, email optional.
+Ellie Small, esmall1@drew.edu.
 
-Maintainer: Your Name <your@email.com>
-}
-\references{
-  This optional section can contain literature or other references for
-  background information.
-}
-\keyword{ package }
-\seealso{
-  Optional links to other man pages
-}
-\examples{
-  \dontrun{
-     ## Optional simple examples of the most important functions
-     ## These can be in \dontrun{} and \donttest{} blocks.   
-  }
+Maintainer: Ellie Small <esmall1@drew.edu>
 }
