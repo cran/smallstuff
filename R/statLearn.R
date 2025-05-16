@@ -19,7 +19,7 @@
 impNA <- function(x,fn=mean,...) {
   if (!inherits(x,c("integer","numeric"))) stop("x must be a numeric vector")
   if (!inherits(fn,"function")) stop("fn must be a function")
-  x[is.na(x)]=fn(x,...)
+  x[is.na(x)]=fn(x,...)[1]
   x
 }
 #########1#########2#########3#########4#########5#########6#########7#########8
@@ -58,6 +58,7 @@ logistErrorRate<-function(gmod,nw=NULL,p=.5) {
     m=nrow(nw)
     preds=rep(levels(gmod$model[,1])[1],m)
     preds[prob>p]=levels(gmod$model[,1])[2]
+    preds=factor(preds,levels=levels(gmod$model[,1]))
     return(list(
       errorRate=eval(parse(text=paste0("mean(preds!=nw$",response,")*100"))),
       result=stats::addmargins(eval(parse(
@@ -67,6 +68,7 @@ logistErrorRate<-function(gmod,nw=NULL,p=.5) {
   n=nrow(gmod$model)
   preds=rep(levels(gmod$model[,1])[1],n)
   preds[fitted(gmod)>p]=levels(gmod$model[,1])[2]
+  preds=factor(preds,levels=levels(gmod$model[,1]))
   list(errorRate=mean(preds!=gmod$model[,1])*100,
        result=stats::addmargins(table(fitted=preds,response=gmod$model[,1])))
 }
